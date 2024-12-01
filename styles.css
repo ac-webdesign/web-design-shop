@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+}
+
+h1{ font-size: 72px;}
+
+h2{ font-size: 48px;}
+
+h3{ font-size: 36px;}
+
+h4{ font-size: 24px;}
+
+h5{ font-size: 20px;}
+
+h6{ font-size: 16px;}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 2rem;
+}
+
+.logo{
+    /* position: absolute; */
+    width: 4rem;
+    height: 4rem;
+    left: 3rem;
+}
+
+/* NAVIGATION */
+
+nav{
+    z-index: 999;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+nav li{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: rgb(161, 164, 167);
+}
+.burger-menu{
+    display: none;
+    font-size: 32px;
+    cursor: pointer;  
+    color: white;
+    transition: position ease 0.3s;
+}
+.burger-menu.open {
+    content: 'X'; /* Replace burger icon with X */
+    font-size: 32px;
+    position: absolute;
+    right: 3.2rem;
+    top: 0.8rem;
+    z-index: 9999;
+  }
+.nav-footer{
+    display: none;
+}
+hr{
+    display: none;
+}
+@media (width< 900px) {
+    nav a{
+        font-size: 1rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+}
+
+@media (width< 720px) {
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        background-color: #181717;
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+    }
+    nav ul.active{
+        display: flex;
+        justify-content: start;
+        padding-top: 9rem;
+    }
+    .nav-footer.active{
+        display: block;
+    }
+    .nav-footer i, .social-icons i {
+        color: white;
+    }
+
+
+    .nav-footer{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 5rem;
+
+    }
+    nav p{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    nav a{
+        font-size: 2rem;
+    }
+    nav .social-icons{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    nav .social-icons i{
+        font-size: 3rem;
+    }
+    nav hr{
+        display: block;
+        width: 70%;
+        color: #b3b3b3;
+    
+    }
+    .logo{
+        position: absolute;
+        left: 3rem;
+        top: 0.2rem;
+        z-index: 9999;
+    }
+    .burger-menu{
+        display: block;
+        position: absolute;
+        right: 3rem;
+        top: 0.2rem;
+    }
+}
+@media (width< 440px) {
+   nav li a{
+    font-size: 1.6rem;
+   }
+
+   nav .social-icons{
+    margin-top: 1rem;
+   }
+   nav p{
+    font-size: 1rem;
+    font-weight: 200;
+   }
+   .nav-footer{
+    padding-top: 0.7rem;
+   }
+}
+/* HERO SECTION */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/hero.webp);
+    background-size:cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+.hero h1{
+    margin-bottom: 2rem;
+}
+.hero h3{
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+.hero-content{
+    color: white;
+    margin-left: 5rem;
+    width: 80vw;
+}
+
+button{
+    padding: 1rem;
+    width: 15rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color ease 0.3s ;
+}
+button:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+@media (width< 1280px) {
+    .hero{
+        height: 90vh;
+    }
+    .hero h1{ 
+        font-size: 60px;
+    }
+    .hero h2{
+        font-size: 40px;
+    }
+}
+@media (width< 900px) {
+    .hero{
+        height: 70vh;
+    }
+    .hero h1{ 
+        font-size: 40px;
+    }
+    .hero button {
+        width: 12rem;
+        font-size: 0.8rem;
+    }
+}
+@media (width< 720px) {
+    .hero{
+        height: 70vh;
+    }
+    .hero h3{ 
+        font-size: 22px;
+    }
+    .hero h1{
+        font-size: 32px;
+    }
+    .hero button {
+        width: 10rem;
+        font-size: 0.7rem;
+        padding: 0.6rem;
+    }
+}
+@media (width< 440px) {
+
+    .hero-content{
+        margin-left: 0;
+    }
+    .hero h3{ 
+        font-size: 20px;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+    .hero button {
+        width: 10rem;
+        font-size: 0.7rem;
+        padding: 0.6rem;
+    }
+}
+/* SERVICES */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.services-tabs{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.services h2{
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.services h3{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.services p{
+    text-align: center;
+    font-weight: 100;
+}
+.services h5{
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+.services h5:hover{
+    color: #808080;
+}
+.services img{
+    width: 6rem;
+}
+.service-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-icon{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width< 900px) {
+   
+    .services h2{ 
+        font-size: 32px;
+        text-align: center;
+    }
+    .services img{
+        width: 5rem;
+    }
+    .services h3{
+        font-size: 26px;
+        font-weight: 200;
+    }
+    .services p{
+        text-align: center;
+        font-weight: 100;
+    }
+    .services-tabs{
+        max-width: 700px;
+    }
+}
+@media (width< 720px) {
+    .services-tabs{
+        flex-direction: column;
+    }
+    .service-tab{
+        max-width: 360px;
+    }
+    .services-tabs{
+        gap: 1rem;
+    }
+}
+@media (width< 440px) {
+    .service-tab{
+        max-width: 300px;
+    }
+
+}
+/* QUOTE SECTION */
+
+.quote-section{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url(/images/hero.webp);
+    background-attachment: fixed; /*parallex effect*/
+    background-position: center;
+    background-repeat: no-repeat;    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: white;
+    /* margin-bottom: 3rem; */
+}
+
+.quote-box{
+    height: 180px;
+    border: 1px solid  #D1D1D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 80%;
+}
+.quote-box h5{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+@media (width< 440px) {
+    .quote-box h5{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    p{
+        text-align: center;
+    }
+}
+/* PROJECTS SECTION */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem 0;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.projects-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 380px;
+}
+.projects img{
+    margin-bottom: 1rem;
+}
+.projects h2{
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+.projects h3{
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    height: 50px;
+}
+.projects p{
+    text-align: center;
+    font-weight: 100;
+}
+.projects h5{
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+.projects h5:hover{
+    color: #808080;
+}
+@media (width< 900px) {
+   
+    .projects-container{
+        flex-direction: column;
+    }
+}
+
+@media (width< 440px) {
+   .projects h2{
+     font-size: 32px;
+   }
+   .projects h3{
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 400;
+   }
+
+}
+/* ACTION SECTION */
+
+.action-section{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                      url(/images/action-background.jpg);
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.action-section h2{
+    margin-bottom: 2rem;
+}
+.action-section h3{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.action-section button{
+    width: 300px;
+    margin-top: 1rem;
+}
+
+
+.parallax-section {
+    position: relative;
+    height: 40vh; /* Full viewport height */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                      url(sample.webp);
+    background-attachment: fixed; /* This is the key for the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    @media (width< 900px) {
+   
+        .action-section h2{
+            font-size: 32px;
+        }
+        .action-section h3{
+            font-size: 26px;
+        }
+        .action-section button{
+            font-size: 16px;
+        }
+    }
+    @media (width< 720px) {
+   
+        .action-section h2{
+            font-size: 26px;
+        }
+        .action-section h3{
+            font-size: 22px;
+        }
+        .action-section button{
+            font-size: 16px;
+        }
+        .action-section{
+            gap: 1rem;
+        }
+    }
+    @media (width< 440px) {
+        .action-section h2{
+            text-align: center;
+        }
+        .action-section h3{
+            font-size: 20px;
+        }
+        .action-section button{
+            font-size: 16px;
+            padding: 12px 0;
+        }
+        .action-section{
+            gap: 1rem;
+        }
+
+    }   
+/* CONTACT SECTION */
+
+.contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+.contact-container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 2rem;
+}
+.contact h4{
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.contact h3{
+    color: #505050;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.contact p{
+    margin-bottom: 1rem;
+}
+.social-icons{
+    display: flex;
+    gap: 1rem;
+}
+.social-icon i{
+    font-size: 2rem;
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2rem;
+}
+
+
+.form input{
+    border: none;
+    line-height: 2rem;
+    border-bottom: 2px solid black;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    outline: none;
+    width: 400px;
+}
+.form textarea{
+    border: none;
+    border-bottom: 2px solid black;
+    min-height: 100px;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    outline: none;
+    resize: vertical;
+}
+.form button{
+    width: 100%;
+    background-color: #5E5E5E;
+    color: white;
+}
+.form button:hover{
+    background-color: #b3b3b3;
+}
+
+@media (width< 900px) {
+   
+    .contact-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    .contact-info{
+        gap: 1rem;
+        align-items: center;
+    }
+}
+@media (width< 720px) {
+
+    .form input, .form textarea{
+        width: 340px;
+    }
+}
+@media (width< 440px) {
+    .form input, .form textarea{
+        width: 300px;
+    }
+
+}  
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+.footer img{
+    width: 6rem;
+}
+.footer i {
+    color: white;
+}
