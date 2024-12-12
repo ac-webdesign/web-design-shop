@@ -50,7 +50,7 @@ document.addEventListener('click', (e) => {
   document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll('.hero-tab');
     const projectTab = document.querySelectorAll('.project-container')
-
+    const action = document.querySelectorAll('.action-container')
     // const revealHero = () => {
     //     const hero = document.querySelector('.hero-left-container')
         
@@ -64,7 +64,7 @@ document.addEventListener('click', (e) => {
             if (tabTop < windowHeight - 100) {
                 setTimeout(() => {
                     tab.classList.add('show');
-                }, index * 200); // Sequential delay for each tab
+                }, index * 200); 
             }
         });
     };
@@ -76,18 +76,50 @@ document.addEventListener('click', (e) => {
           if (tabTop < windowHeight - 100) {
               setTimeout(() => {
                   about.classList.add('show');
-              }, index * 200); // Sequential delay for each tab
+              }, index * 200); 
           }
+          if (tabTop < windowHeight - 900) {
+            setTimeout(() => {
+                about.classList.remove('show');
+            }, index * 200); 
+        }
+          if (tabTop > windowHeight - 100) {
+            setTimeout(() => {
+                about.classList.remove('show');
+            }, index * 200); 
+        }
       });
   };
-  
+    const revealAction = () => {
+      action.forEach((a, index) => {
+          const tabTop = a.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (tabTop < windowHeight - 100) {
+              setTimeout(() => {
+                  a.classList.add('show');
+              }, index * 200); 
+          }
+          if (tabTop > windowHeight - 100) {
+            setTimeout(() => {
+                a.classList.remove('show');
+            }, index * 200); 
+        }
+          if (tabTop < windowHeight - 800) {
+            setTimeout(() => {
+                a.classList.remove('show');
+            }, index * 200); 
+        }
+      });
+  };
     // Run on scroll
     window.addEventListener('scroll', revealTabs);
     window.addEventListener('scroll', revealProjects);
+    window.addEventListener('scroll', revealAction);
 
     // Run on page load in case some tabs are already in view
     revealTabs();
     revealProjects();
-    // revealHero();
+    revealAction();
 });
   
