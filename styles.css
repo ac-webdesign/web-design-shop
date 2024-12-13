@@ -67,7 +67,7 @@ nav a{
     transition: color 0.3s ease;
 }
 nav a:hover{
-    color: rgb(41, 41, 41);
+    color: rgb(197, 24, 24);
 }
 .burger-menu{
     display: none;
@@ -222,6 +222,7 @@ hr{
 		background-position: 0% 50%;
 	}
 }
+
 .hero h1{
     margin-bottom: 2rem;
     font-size: 60px;
@@ -972,8 +973,9 @@ form{
     color: #494646;
 }
 .services-page p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.2rem;
+    font-weight: 100;
     max-width: 500px;
     margin-bottom: 1rem;
 }
