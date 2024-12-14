@@ -38,7 +38,6 @@ body{
 }
 
 .logo{
-    /* position: absolute; */
     height: 4.4rem;
     top: 1rem;
     left: 1rem;
@@ -46,7 +45,9 @@ body{
     backdrop-filter: blur(1rem);
     z-index: 9999;
 }
-
+a{
+    text-decoration: none;
+}
 /* NAVIGATION */
 
 nav{
@@ -69,6 +70,7 @@ nav a{
 nav a:hover{
     color: rgb(197, 24, 24);
 }
+
 .burger-menu{
     display: none;
     font-size: 32px;
@@ -80,13 +82,14 @@ nav a:hover{
     content: 'X'; 
     font-size: 32px;
     position: absolute;
-    right: 3.2rem;
-    top: 0.8rem;
+    right: 4.3rem;
+    top: 1.9rem;
     z-index: 9999;
   }
 .nav-footer{
     display: none;
 }
+
 hr{
     display: none;
 }
@@ -114,8 +117,8 @@ hr{
     nav ul.active{
         display: flex;
         justify-content: start;
-        padding-top: 9rem;
-        gap: 2rem;
+        padding-top: 5rem;
+        gap: 1.6rem;
     }
 
     .nav-footer.active{
@@ -123,6 +126,10 @@ hr{
     }
     .nav-footer i, .social-icons i {
         color: white;
+    }
+    .nav-footer img{
+        width: 12rem;
+        margin-bottom: 1rem;
     }
     .header{
         justify-content: center;
@@ -137,7 +144,6 @@ hr{
         flex-direction: column;
         padding: 2rem;
         gap: 5rem;
-
     }
     nav p{
         font-size: 1.2rem;
@@ -147,13 +153,16 @@ hr{
     nav a{
         font-size: 2rem;
     }
+    .nav-footer a{
+        font-size: 0.8rem;
+    }
     nav .social-icons{
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     nav .social-icons i{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     nav hr{
         display: block;
@@ -162,9 +171,6 @@ hr{
     
     }
     .logo{
-        /* position: absolute; */
-        left: 3rem;
-        top: 1.2rem;
         z-index: 9999;
         height: 3rem;
     }
@@ -175,28 +181,39 @@ hr{
         top: 1.4rem;
     }
 }
-@media (width< 440px) {
-   nav li a{
-    font-size: 1.6rem;
-   }
+    @media (width< 440px) {
+    nav li a{
+        font-size: 1.6rem;
+    }
 
-   nav .social-icons{
-    margin-top: 1rem;
-   }
-   nav p{
-    font-size: 1rem;
-    font-weight: 200;
-   }
-   .nav-footer{
-    padding-top: 0.7rem;
-   }
-   .header{
-    position: fixed;
-    top: 0;
-    z-index: 99999;
-    background-color: #d1bfbfc4;
-   }
-}
+    nav .social-icons{
+        margin-top: 1rem;
+    }
+    nav p{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .nav-footer{
+        padding-top: 0.7rem;
+    }
+    .header{
+        height: 65px;
+        position: fixed;
+        top: 0;
+        z-index: 99999;
+        background-color: #d1bfbfc4;
+    }
+    .burger-menu{
+        right: 2rem;
+        top: 0.7rem;
+    }
+    .burger-menu.open {
+        right: 2.3rem;
+        top: 1.2rem;
+        z-index: 9999;
+      }
+    }
+
 /* HERO SECTION */
 
 .hero{
@@ -264,7 +281,6 @@ button:hover{
     border: 2px solid white;
 
 }
-
 .hero-tabs{
     display: flex;
     padding: 0 3rem;
@@ -278,14 +294,14 @@ button:hover{
     cursor: pointer;
     padding: 0 1rem;
     max-width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     opacity: 0.1;
     transform: translateX(-200px);
     transition: transform 0.6s ease-out, box-shadow 0.3s ease, opacity 1s ease-out; 
 }
 .hero-tab:hover {
-    transform: translateY(-5px); /* Lift the container slightly on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   }
   .hero-tab.show{
     opacity: 1;
@@ -323,8 +339,6 @@ button:hover{
         gap: 1rem;
         margin-bottom: 2rem;
     }
-    
-     
     .hero h1{ 
         font-size: 36px;
     }
@@ -381,7 +395,6 @@ button:hover{
     }
 }
 @media (width< 440px) {
-
     .hero{
         padding-top: 8rem;
         height: 100%;
@@ -393,7 +406,6 @@ button:hover{
         justify-content: center;
         align-items: center;
     }
-    
     .hero h3{ 
         font-size: 12px;
     }
@@ -418,7 +430,6 @@ button:hover{
     padding: 1rem;
     max-width: 1200px;
 }
-
 .services-tabs{
     display: flex;
     align-items: start;
@@ -426,7 +437,6 @@ button:hover{
     gap: 3rem;
     margin-bottom: 3rem;
 }
-
 .services h2{
     margin-bottom: 2rem;
     font-weight: 400;
@@ -504,46 +514,6 @@ button:hover{
     }
 
 }
-/* QUOTE SECTION */
-
-.quote-section{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-    url(/images/hero.webp);
-    background-attachment: fixed; /*parallex effect*/
-    background-position: center;
-    background-repeat: no-repeat;    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    color: white;
-    /* margin-bottom: 3rem; */
-}
-
-.quote-box{
-    height: 180px;
-    border: 1px solid  #D1D1D1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 1rem;
-    width: 80%;
-}
-.quote-box h5{
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 100;
-}
-@media (width< 440px) {
-    .quote-box h5{
-        font-size: 16px;
-        font-weight: 100;
-    }
-    p{
-        text-align: center;
-    }
-}
 /* PROJECTS SECTION */
 
 .projects{
@@ -582,7 +552,7 @@ button:hover{
     border: 1px solid #e0e0e0; 
     border-radius: 8px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.8s ease-in-out, box-shadow 0.3s ease, opacity 0.6s ease-out; /* Smooth hover effect */
+    transition: transform 0.8s ease-in-out, box-shadow 0.3s ease, opacity 0.6s ease-out;
     transform: translateX(-300px);
     opacity: 0;
 }
@@ -593,24 +563,19 @@ button:hover{
   .project-container:hover {
     transform: translateY(-5px); 
     transition: transform ease 0.2s;
-
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   }
 
 .projects img{
-    /* margin-bottom: 3rem; */
     width: 100%;
     height: 200px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-
-
 }
 .projects h2{
     margin-bottom: 3rem;
     font-weight: 600;
     font-size: 1.5rem;
-
 }
 .projects h6{
     width: 100%;
@@ -654,7 +619,6 @@ button:hover{
     color: white;
 }
 @media (width< 1200px) {
-   
     .projects-container{
         flex-wrap: wrap;
     }
@@ -672,60 +636,51 @@ button:hover{
     width: 300px;
    }
 }
-/* ACTION SECTION */
 
-.action-section{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    margin-bottom: 0;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), 
-                      url(/images/action-background3.png);
-    background-attachment: fixed; 
-    background-size: cover;
-	animation: gradient 15s ease infinite;
-    background-repeat: no-repeat;
-}
-.action-section h2{
-    margin-bottom: 2rem;
-}
-.action-section h3{
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-.action-section button{
-    width: 300px;
-    margin-top: 1rem;
-}
-.action-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity ease-in 2s;
-}
-.action-container.show{
-    opacity: 1;
-}
-.parallax-section {
-    position: relative;
-    height: 40vh; /* Full viewport height */
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                      url(sample.webp);
-    background-attachment: fixed; /* This is the key for the parallax effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    /* ACTION SECTION */
+
+    .action-section{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        margin-bottom: 0;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), 
+                        url(/images/action-background3.webp);
+        background-attachment: fixed;
+        background-size: cover;
+        animation: gradient 15s ease infinite;
+        background-repeat: no-repeat;
+    }
+    .action-section h2{
+        margin-bottom: 2rem;
+    }
+    .action-section h3{
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .action-section button{
+        width: 300px;
+        margin-top: 1rem;
+    }
+    .action-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity ease-in 2s;
+    }
+    .action-container.show{
+        opacity: 1;
+    }       
 
     @media (width< 900px) {
    
@@ -769,6 +724,7 @@ button:hover{
         
 
     }   
+
 /* CONTACT SECTION */
 
 .contact{
@@ -777,14 +733,33 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem;
+    padding: 0;
 }
 .contact-container{
-    max-width: 1200px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4rem;
-    border-top: 1px solid #8b08084b;
+    background-color: #f8f8f6;
+    padding: 2rem 0;
+}
+#contact-hero{
+    height: 500px;
+    background-image: url(images/contact-hero.png);
+    margin-bottom: 4rem;
+}
+.contact-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	background-size: cover;
+	animation: gradient 15s ease infinite;
+}
+.contact h2{
+    font-size: 40px;
 }
 .contact-info{
     display: flex;
@@ -797,6 +772,7 @@ button:hover{
     font-weight: 200;
     font-size: 1.4rem;
     margin-bottom: 2rem;
+    color:#181818de;
 }
 
 .contact h3{
@@ -805,8 +781,18 @@ button:hover{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+
 .contact p{
     margin-bottom: 1rem;
+    padding: 0;
+}
+.contact-p{
+    max-width: 800px;
+    line-height: 24px;
+    color: #464646;
+    font-size: 1.2rem;
+    padding: 3rem;
+    text-align: center;
 }
 .contact img{
     width: 20rem;
@@ -828,7 +814,6 @@ form{
     padding: 2rem;
 }
 
-
 .form input{
     border: none;
     line-height: 2rem;
@@ -837,6 +822,7 @@ form{
     font-size: 1.3rem;
     outline: none;
     width: 400px;
+    background-color: transparent;
 }
 .form textarea{
     border: none;
@@ -847,6 +833,8 @@ form{
     outline: none;
     resize: vertical;
     font-weight: 400;
+    background-color: transparent;
+
 }
 .form button{
     width: 100%;
@@ -858,6 +846,12 @@ form{
 }
 .contact-info span{
     color: #8B0808;
+}
+.contact-info span a{
+    color: #8B0808;
+}
+.mobile-footer{
+    display: none;
 }
 @media (width< 900px) {
    
@@ -884,16 +878,60 @@ form{
     .contact{
         padding-top: 0;
     }
+    .contact-container{
+        border: none;
+    }
     .contact h4{
         width: 90%;
     }
     .contact img{
         margin-bottom: 0;
-        /* margin-top: 1rem; */
+    }
+    .contact h2{
+        text-align: center;
+    }
+    /* MOBILE FOOTER */
+    .mobile-footer{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        font-size: 0.8rem;
+        line-height: 60px;
+    }
+    
+    .left-mobile-footer, .right-mobile-footer{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .right-mobile-footer{
+        border-left: 1px solid white;
+    }
+    .left-mobile-footer{
+        border-right: 1px solid white;
+    }
+    .mobile-footer i{
+        font-size: 1.6rem;
+    }
+    .mobile-footer a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 }  
-/* FOOTER */
 
+/* FOOTER */
 .footer{
     width: 100%;
     color: white;
@@ -916,6 +954,17 @@ form{
     color: #ffffffbe;
     font-size: 0.7rem;
 }
+
+@media (width < 440px) {
+    .footer{
+        padding-bottom: 5rem;
+    }
+    .footer a{
+        text-decoration: none;
+        color: white;
+    }
+}
+/* SERVICES PAGE */
 .services-hero{
     display: flex;
     flex-direction: row;
@@ -1083,7 +1132,6 @@ form{
         gap: 0;
     }
 }
-
 
 /* PROJECTS PAGE */
 

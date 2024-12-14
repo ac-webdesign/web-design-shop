@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Επικοινωνία | site-mou.gr</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/styles.css">
     <meta name="description" content="Κατασκευή ιστοσελίδων υψηλής ποιότητας για μικρές επιχειρήσεις και ελεύθερους επαγγελματίες. Δημιουργούμε μοναδικές ιστοσελίδες που ανταποκρίνονται στις ανάγκες σας και βελτιώνουν την online παρουσία σας.">
     <meta name="keywords" content="κατασκευή ιστοσελίδων, δημιουργία ιστοσελίδων, σχεδιασμός ιστοσελίδων, web design, web development, ιστοσελίδες SEO">
@@ -13,7 +13,7 @@
     <!-- Open Graph Metadata for Social Sharing -->
     <meta property="og:title" content="Κατασκευή Ιστοσελίδων - Επαγγελματικές Υπηρεσίες Web Design">
     <meta property="og:description" content="Επαγγελματική κατασκευή ιστοσελίδων υψηλής ποιότητας. Δημιουργούμε μοναδικές ιστοσελίδες που ανταποκρίνονται στις ανάγκες σας και βελτιώνουν την online παρουσία σας.">
-    <meta property="og:image" content="https://www.site-mou.gr/images/logo3.png">
+    <meta property="og:image" content="https://www.site-mou.gr/images/thumbnail.png">
     <meta property="og:url" content="https://www.site-mou.gr/contact">
     <meta property="og:type" content="website">
 
@@ -21,15 +21,25 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Κατασκευή Ιστοσελίδων - Επαγγελματικές Υπηρεσίες Web Design">
     <meta name="twitter:description" content="Επαγγελματική κατασκευή ιστοσελίδων υψηλής ποιότητας. Δημιουργούμε μοναδικές ιστοσελίδες που ανταποκρίνονται στις ανάγκες σας και βελτιώνουν την online παρουσία σας.">
-    <meta name="twitter:image" content="https://www.site-mou.gr/images/logo3.png">
+    <meta name="twitter:image" content="https://www.site-mou.gr/images/thumbnail.png">
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon2.png" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK417XHKDR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EK417XHKDR');
+    </script>
 </head>
 
 <body>
     <div class="header">
-        <a href="index.html"><img src="/images/logo3.png" alt="AC Logo" class="logo"></a>
+        <a href="index.html"><img src="/images/logo3.webp" alt="AC Logo" class="logo"></a>
         <div class="burger-menu">&#9776;</div>
         <nav>
             <ul>
@@ -42,7 +52,7 @@
                 <li>
                     <div class="nav-footer">
                         <p><i class="fas fa-envelope"></i> info@acwebdesign.gr</p>
-                        <p><i class="fas fa-phone"></i> +30 699 20 44 914</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+306992044914">+30 699 20 44 914</a></p>
                         <div class="social-icons">
                             <a href="https://www.facebook.com/delavengas/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f" style="color: white;"></i></a>
                             <a href="https://www.instagram.com/alek0s13/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram" style="color: white;"></i></a>
@@ -53,21 +63,23 @@
             
         </nav>
     </div>
-    <section class="services-hero" id="services-hero">
-        <!-- <h2>Υπηρεσίες Κατασκευής <br>και Προώθησης Ιστοσελίδων</h2> -->
+    <section class="contact-hero" id="contact-hero">
     </section>
     
-    <div class="contact" id="contact">
-        <img src="images/contact.png" alt="Επικοινωνήστε με το site-mou.gr">
+    <section class="contact" id="contact">
 
+        <h2>Έτοιμοι να μιλήσουμε;</h2>
+        <div class="contact-p">Είμαστε εδώ για να συζητήσουμε και να κατανοήσουμε τους στόχους και τις ανάγκες σας, ώστε να αναπτύξουμε με τον καλύτερο δυνατό τρόπο την ιστοσελίδα σας!</div>
+        
+        
         <div class="contact-container">
 
             <div class="contact-info">
-                <h3>Είμαστε ενα τηλεφώνημα μακριά</h2>
-                <h4>Καλέστε στο <span>+30 699 20 44 914</span>!</h3>
-                <h4>'Η</h4>
-                <h4><span>Συμπληρώστε τη φόρμα</span> και θα <br> επικοινωνήσουμε μαζί σας σύντομα!</h3>
-                <p><i class="fas fa-envelope"></i> info@acwebdesign.gr</p>
+                <!-- <h3>Είμαστε ενα τηλεφώνημα μακριά</h2> -->
+                <h3>Καλέστε στο <span><a href="tel:+306992044914">+306992044914</a></span>!</h3>
+                <h3>'Η</h3>
+                <h3><span>Συμπληρώστε τη φόρμα</span> και θα <br> επικοινωνήσουμε μαζί σας σύντομα!</h3>
+                <p><i class="fas fa-envelope"></i> info@site-mou.gr</p>
                 <!-- <p><i class="fas fa-phone"></i> +30 699 20 44 914</p> -->
                 <div class="social-icons">
                     <a href="https://www.facebook.com/delavengas/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -75,28 +87,35 @@
                 </div>
             </div>
             <div class="form">
-                <form action="submit">
-                    <input type="text" id="name" placeholder="Ονοματεπώνυμο">
-                    <input type="tel" id="tel" placeholder="Τηλέφωνο">
-                    <input type="email" id="email" placeholder="Email">
+                <form action="submit" name="contact" netlify method="POST"> 
+                    <input type="text" id="name" name="name" placeholder="Ονοματεπώνυμο" required>
+                    <input type="tel" id="tel" name="tel" placeholder="Τηλέφωνο" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                     <textarea name="message" id="message" placeholder="Μήνυμα">Παρακαλώ επικοινωνήστε μαζί μου.</textarea>
                     <button>ΑΠΟΣΤΟΛΗ</button>
                 </form>
             </div>
         </div>
-    </div>
-
     </section>
 
-    <div class="footer">
-        <img src="images/logo3.png" alt="AC logo">
+    <div class="mobile-footer">
+        <div class="left-mobile-footer">
+            <a href="#form"><i class="fa-regular fa-envelope"></i>ΣΤΕΙΛΤΕ ΜΗΝΥΜΑ</a>
+        </div>
+        <div class="right-mobile-footer">
+            <a href="tel:+306992044914"><i class="fa-solid fa-phone-volume"></i>ΚΑΛΕΣΤΕ ΜΑΣ</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="images/logo3.webp" alt="site-mou.gr Λογότυπο" loading="lazy">
         <p><i class="fas fa-envelope"></i> info@site-mou.gr</p>
-        <p><i class="fas fa-phone"></i> +30 699 20 44 914</p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+306992044914">+30 699 20 44 914</a></p>
         <div class="social-icons">
             <a href="https://www.facebook.com/delavengas/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/alek0s13/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-    </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
