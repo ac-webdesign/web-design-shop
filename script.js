@@ -39,7 +39,7 @@ document.addEventListener('click', (e) => {
     item.addEventListener('click', () => {
       navMenu.classList.remove('active');
       burgerMenu.classList.remove('open');
-      burgerMenu.innerHTML = '&#9776;'; // Reset burger icon
+      burgerMenu.innerHTML = '&#9776;'; 
       document.body.style.overflow = 'auto';
 
     });
@@ -51,11 +51,26 @@ document.addEventListener('click', (e) => {
     const tabs = document.querySelectorAll('.hero-tab');
     const projectTab = document.querySelectorAll('.project-container')
     const action = document.querySelectorAll('.action-container')
+    const h3 = document.querySelectorAll('.h3')
     // const revealHero = () => {
     //     const hero = document.querySelector('.hero-left-container')
         
     //     hero.classList.add('show');
-    // }
+    // 
+    const revealH3 = () => {
+
+      h3.forEach((h, index) => {
+        const tabTop = h.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+            if (tabTop < windowHeight - 50) {
+                setTimeout(() => {
+                  h.classList.add('show')
+                }, index * 200); 
+            }
+      })
+        
+  };
     const revealTabs = () => {
         tabs.forEach((tab, index) => {
             const tabTop = tab.getBoundingClientRect().top;
@@ -113,11 +128,14 @@ document.addEventListener('click', (e) => {
       });
   };
     // Run on scroll
+    window.addEventListener('scroll', revealH3);
+
     window.addEventListener('scroll', revealTabs);
     window.addEventListener('scroll', revealProjects);
     window.addEventListener('scroll', revealAction);
 
     // Run on page load in case some tabs are already in view
+    revealH3();
     revealTabs();
     revealProjects();
     revealAction();
