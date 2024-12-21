@@ -299,6 +299,15 @@ button:hover{
     border: 2px solid white;
 
 }
+.hero-tabs-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.hero-tabs-container h4{
+    margin-bottom: 1.2rem;
+}
 .hero-tabs{
     display: flex;
     padding: 0 3rem;
@@ -340,7 +349,7 @@ button:hover{
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    color: white;
+    color: rgb(233, 233, 233);
 }
 @media (width< 1280px) {
     .hero{
@@ -665,7 +674,9 @@ button:hover{
     align-items: center;
     justify-content: center;
     padding: 5rem 1rem;
-    background-color: #7a7a102f;
+    background: linear-gradient(-45deg,  #E6E6D3,#b8b883,#E6E6D3,#b8b883);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     width: 100%;
 }
 
@@ -753,8 +764,9 @@ button:hover{
     color: #808080;
 }
 .projects button{
-    border: 2px solid #c9c9c9;
-    color: #a5a5a5;
+    border: 2px solid #424242;
+    color: #383838;
+    background-color: transparent;
     margin-bottom: 2rem;
     transition: all ease-in 0.3s;
 }
@@ -1086,7 +1098,8 @@ form{
     color: white;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;    display: flex;
+	animation: gradient 15s ease infinite;    
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -1103,15 +1116,16 @@ form{
     color: #ffffffbe;
     font-size: 0.7rem;
 }
+.footer a{
+    text-decoration: none;
+    color: white;
+}
 
 @media (width < 440px) {
     .footer{
         padding-bottom: 5rem;
     }
-    .footer a{
-        text-decoration: none;
-        color: white;
-    }
+    
 }
 /* SERVICES PAGE */
 .services-hero{
@@ -1143,17 +1157,6 @@ form{
     padding: 4rem 0;
 }
 
-.services-page button{
-    color: #f8f8f8;
-    background-color: #6D64FF;
-    border: 2px solid #6D64FF;
-    width: 340px;
-}
-.services-page button:hover{
-    color: #ffffff;
-    background-color: hsl(243, 100%, 60%);
-    border: 2px solid #6D64FF;
-}
 
 
 .services-content{
@@ -1196,27 +1199,23 @@ form{
     width: 200px;
     font-size: 0.8rem;
     padding: 0.4rem 0rem;
-    color: #6D64FF;
     background-color: #fcfcfc;
-    border: 2px solid #6D64FF;
 }
-.bio-right button:hover{
-    color: #ffffff;
-    background-color: #6D64FF;
-    border: 2px solid #6D64FF;
-}
+
 .services-page img{
     width: 12rem;
 }
 .service-description{
     width: 100%;
     text-align: center;
-    background-color: #f7d2d256;
+    background-color: #e6e6d300;
     padding-top: 3rem;
 }
 .service-description h3{
     font-size: 1.5rem;
     margin-bottom: 3rem;
+    padding: 1rem 0;
+    background-color: #E6E6D3;
 }
 .service-description h6{
     font-size: 0.8rem;
@@ -1232,7 +1231,8 @@ form{
     gap: 1rem;
 }
 .phases img{
-    width: 300px;
+    width: 200px;
+    height: 180px;
     margin-bottom: 1.4rem;
 }
 .phase-container{
@@ -1340,13 +1340,14 @@ form{
 }
 
 .projects-page .hero-button{
-    border: 2px solid #8B0808;
+    border: 2px solid #a1a176;
+    color: #a1a176;
     text-align: center;
     width: 300px;
 }
 .projects-page .hero-button:hover{
-    border: 2px solid #8B0808;
-    background-color: #8B0808;
+    border: 2px solid #a1a176;
+    background-color: #a1a176;
     color: white;
     text-align: center;
     width: 300px;
@@ -1414,7 +1415,7 @@ article{
 .benefits-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 4rem;
 }
 .benefits-container h1, .benefits-container h2 {
     color: #222;
@@ -1422,7 +1423,7 @@ article{
 }
 .benefits-container h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 .benefits {
     display: grid;
@@ -1474,5 +1475,36 @@ article{
 @media (min-width: 600px) {
     .benefits {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* BLOG PAGE */
+
+
+#blog{
+    padding-top: 10rem;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+#blog h2{
+    max-width: 900px;
+    margin-bottom: 1rem;
+}
+
+#blog p{
+    font-size: 1rem;
+    max-width: 900px;
+}
+
+@media (width< 1200px) {
+    .blog-container{
+        flex-direction: column;
     }
 }

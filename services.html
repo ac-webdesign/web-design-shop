@@ -36,18 +36,97 @@
 
         gtag('config', 'G-EK417XHKDR');
     </script>
+    <style>
+        
+        .header{
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+	        animation: gradient 15s ease infinite;
+        }
+        .services-page{
+            background-color: rgb(255, 255, 255);
+            padding-top: 10rem;
+            flex-direction: column;
+        }
+        h2{
+            color: rgb(65, 65, 65);
+            margin-bottom: 2rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        .services-page ul{
+            padding-left: 2rem;
+            margin-bottom: 1.4rem;
+            list-style-type:circle;
+            font-weight: 600;
+            font-size: 1rem;
+            color: rgb(109, 109, 109);
+        }
+        .bio-container{
+            z-index: 999;
+            width: 1000px;
+        }
+        .bio-container img{
+            width: 300px;
+        }
+        .service-line{
+            position: relative;
+            left: 0;
+            top: 12rem;
+            height: 60px;
+        }
+        .bio-right{
+            background-color: rgb(255, 255, 255);
+            width: 800px;
+            height: 18rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .bio-container button{
+            width: 320px;
+            color: #949467;
+            border: 2px solid #949467;
+        }
+        .bio-container button:hover{
+            background-color: #949467;
+            color: white;
+            border: 2px solid #949467;
+        }
+        @media (width < 900px) {
+            ul{
+                text-align: start;
+            }
+        }
+        @media (width < 768px) {
+            h2{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .bio-right{
+                width: 340px;
+                margin-bottom: 3rem;
+                height: 24rem;
+            }
+            .bio-container button{
+                width: 260px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="header">
-        <a href="index.html"><img src="/images/logo3.webp" alt="site-mou Λογότυπο" class="logo" loading="lazy"></a>
+        <a href="index.html"><img src="/images/logo4.png" alt="site-mou Λογότυπο" class="logo" loading="lazy"></a>
         <div class="burger-menu">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-item" data-sound="hoversound.mp3">ΑΡΧΙΚΗ</a></li>
                 <li><a href="services.html" class="nav-item" data-sound="hoversound.mp3">ΥΠΗΡΕΣΙΕΣ</a></li>
                 <li><a href="projects.html" class="nav-item" data-sound="hoversound.mp3">ΕΡΓΑ</a></li>
-                <li><a href="services.html" class="nav-item" data-sound="hoversound.mp3">ΤΙΜΕΣ</a></li>
+                <li><a href="blogs.html" class="nav-item" data-sound="hoversound.mp3">ΑΡΘΡΑ</a></li>
                 <li><a href="contact.html" class="nav-item" data-sound="hoversound.mp3">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
                 <hr>
                 <li>
@@ -64,57 +143,89 @@
             
         </nav>
     </div>
-    <section class="services-hero" id="services-hero">
-        <!-- <h2>Υπηρεσίες Κατασκευής <br>και Προώθησης Ιστοσελίδων</h2> -->
-    </section>
+    <!-- <section class="services-hero" id="services-hero">
+    </section> -->
     <section class="services-page">
-        <div class="services-content">
+        <h2>Ενδιαφέρομαι για επαγγελματική</h2>
+        <div class="services-content" >
+            <div class="service-line"></div>
 
             <div class="bio-container">
                 <div class="bio-left">
-                    <img src="images/website-icon.webp" alt="Κατασκευή Ιστοσελίδας απο 199 ευρώ" loading="lazy">
+                    <img src="images/staticpage.png" alt="Κατασκευή Ιστοσελίδας απο 199 ευρώ" loading="lazy">
                 </div>
                 <div class="bio-right">
-                    <h4>Κατασκευή Ιστοσελίδας</h4>
-                    <p>Δημιουργούμε σύγχρονες και λειτουργικές ιστοσελίδες που προσαρμόζονται στις ανάγκες της επιχείρησής σας. Εξασφαλίζουμε μοναδικό σχεδιασμό, γρήγορη ταχύτητα και βέλτιστη εμπειρία χρήστη σε όλες τις συσκευές.</p>
+                    <h4>Κατασκευή Στατικής Ιστοσελίδας</h4>
+                    <ul>
+                        <li>Έως 5 προσεγμένες και λειτουργικές σελίδες</li>
+                        <li>Μοντέρνος και εξατομικευμένος σχεδιασμός</li>
+                        <li>Απόλυτη συμβατότητα με κινητά, tablet και υπολογιστές</li>
+                        <li>Βέλτιστη απόδοση και ταχύτητα φόρτωσης</li>
+                        <li>Βασική βελτιστοποίηση SEO για μεγαλύτερη προβολή</li>
+                    </ul>
+                    <!-- <p>Δημιουργούμε σύγχρονες και λειτουργικές ιστοσελίδες που προσαρμόζονται στις ανάγκες της επιχείρησής σας. Εξασφαλίζουμε μοναδικό σχεδιασμό, γρήγορη ταχύτητα και βέλτιστη εμπειρία χρήστη σε όλες τις συσκευές.</p> -->
                     <a href="pagedesign.html"><button>ΑΠΟ 199&euro;</button></a>
                 </div>
             </div> 
-            
-            <div class="bio-container">
+            <div class="service-line"></div>
+
+            <div class="bio-container" style="background-color: #f8f8f6;">
                 <div class="bio-left">
-                    <img src="images/eshop-icon.webp" alt="Κατασκευή e-Shop" loading="lazy">
+                    <img src="images/premiumstaticpage.png" alt="Προώθηση Social Media και SEO" loading="lazy">
                 </div>
-                <div class="bio-right">
-                    <h4>Κατασκευή e-Shop</h4>
-                    <p>Στήνουμε το ηλεκτρονικό σας κατάστημα με έμφαση στη λειτουργικότητα, την ασφάλεια και την εύκολη διαχείριση. Με προηγμένες δυνατότητες πληρωμών και εργαλείων ανάλυσης, βοηθάμε την επιχείρησή σας να πετύχει στις online πωλήσεις.</p>
-                    <button>ΑΠΟ 399&euro;</button>
-                </div>
-            </div>  
-            <div class="bio-container">
-                <div class="bio-left">
-                    <img src="images/social-icon.webp" alt="Προώθηση Social Media και SEO" loading="lazy">
-                </div>
-                <div class="bio-right">
-                    <h4>Προώθηση Social Media και SEO</h4>
-                    <p>Αυξήστε την επισκεψιμότητα και τη δημοτικότητα της επιχείρησής σας με στρατηγικές προώθησης σε social media και στοχευμένο SEO. Χτίζουμε την ψηφιακή σας φήμη και εξασφαλίζουμε καλύτερη κατάταξη στις μηχανές αναζήτησης.</p>
-                    <button>ΑΠΟ 99&euro;</button>
+                <div class="bio-right" style="background-color: #f8f8f6;">
+                    <h4>Κατασκευή Premium Στατικής Ιστοσελίδας</h4>
+                    <ul>
+                        <li>Έως 10 προσεγμένες και λειτουργικές σελίδες</li>
+                        <li>Μοντέρνος και εξατομικευμένος σχεδιασμός</li>
+                        <li>Απόλυτη συμβατότητα με κινητά, tablet και υπολογιστές</li>
+                        <li>Βέλτιστη απόδοση και ταχύτητα φόρτωσης</li>
+                        <li>Προηγμένη βελτιστοποίηση SEO για μεγαλύτερη προβολή</li>
+                        <li>Πλήρης υποστήριξη</li>
+                    </ul>
+                    <a href="pagedesign.html"><button>ΑΠΟ 299&euro;</button></a>
 
                 </div>
             </div>
+            <div class="service-line"></div>
+
             <div class="bio-container">
                 <div class="bio-left">
-                    <img src="images/support-icon1.webp" alt="Τεχνική Υποστήριξη" loading="lazy">
+                    <img src="images/eshop.png" alt="Κατασκευή e-Shop" loading="lazy">
                 </div>
                 <div class="bio-right">
-                    <h4>Τεχνική Υποστήριξη</h4>
-                    <p>Παρέχουμε ολοκληρωμένη τεχνική υποστήριξη για την ιστοσελίδα ή το e-shop σας. Από τη συντήρηση έως την αναβάθμιση, είμαστε δίπλα σας για να διασφαλίσουμε την απρόσκοπτη λειτουργία της online παρουσίας σας.</p>
+                    <h4>Κατασκευή e-Shop μέσω Shopify (Βασικό πακέτο)</h4>
+                    <ul>
+                        <li>Έως 25 προιόντα</li>
+                        <li>Ενσωμάτωση ασφαλών τρόπων πληρωμής</li>
+                        <li>Απόλυτη συμβατότητα με κινητά, tablet και υπολογιστές</li>
+                        <li>Διαχείριση αποθέματος και παραγγελιών μέσω του Shopify Dashboard</li>
+                        <li>Προηγμένη βελτιστοποίηση SEO για μεγαλύτερη προβολή</li>
+                        <li>Εκπαίδευση για τη χρήση και διαχείριση της πλατφόρμας Shopify</li>
+                    </ul>
+                    <a href="pagedesign.html"><button>ΑΠΟ 399&euro;</button></a>
                 </div>
-            </div>          
-        
-             
-            <a href="contact.html"><button class="hero-button">Επικοινωνήστε μαζί μας</button></a>
+            </div>  
+                        <div class="service-line"></div>
 
+            <div class="bio-container" >
+                <div class="bio-left">
+                    <img src="images/redesign.png" alt="Τεχνική Υποστήριξη" loading="lazy">
+                </div>
+                <div class="bio-right">
+                    <h4>Ανακατασκευή Υφιστάμενης Ιστοσελίδας</h4>
+                    <ul>
+                        <li>Εκσυγχρονισμός σχεδιασμού</li>
+                        <li>Βελτίωση ταχύτητας φόρτωσης</li>
+                        <li>Ενίσχυση συμβατότητας με όλες τις συσκευές</li>
+                        <li>Ενημέρωση περιεχομένου και γραφικών</li>
+                        <li>Ενσωμάτωση νέων λειτουργιών</li>
+                        <li>Βελτιστοποίηση SEO για μεγαλύτερη προβολή</li>
+                    </ul>
+                    <a href="pagedesign.html"><button>ΑΠΟ 99&euro;</button></a>
+
+                </div>
+            </div>         
         </div>
 
     </section>
@@ -124,19 +235,19 @@
 
         <div class="phases">
             <div class="phase-container">
-                <img src="images/service1.webp" alt="Ανάλυση Αναγκών και Στόχων" loading="lazy">
+                <img src="images/goals.png" alt="Ανάλυση Αναγκών και Στόχων" loading="lazy">
                 <h6>Κατανοούμε τις ανάγκες και τους στόχους σας, σχεδιάζοντας μια στρατηγική που ταιριάζει στην επιχείρησή σας.</h6>
             </div>
             <div class="phase-container">
-                <img src="images/service2.webp" alt="Σχεδιασμός και Δημιουργία Περιεχομένου" loading="lazy">
+                <img src="images/design (2).png" alt="Σχεδιασμός και Δημιουργία Περιεχομένου" loading="lazy">
                 <h6>Δημιουργούμε το εικαστικό σχέδιο και οργανώνουμε το περιεχόμενο για μια ελκυστική και λειτουργική ιστοσελίδα.</h6>
             </div>
             <div class="phase-container">
-                <img src="images/service3.webp" alt="Ανάπτυξη και Τεχνική Υλοποίηση" loading="lazy">
+                <img src="images/develop.png" alt="Ανάπτυξη και Τεχνική Υλοποίηση" loading="lazy">
                 <h6>Χτίζουμε την ιστοσελίδα σας με σύγχρονες τεχνολογίες, διασφαλίζοντας απόλυτη συμβατότητα σε όλες τις συσκευές.</h6>
             </div>
             <div class="phase-container">
-                <img src="images/service4.webp" alt="Έλεγχος και Παράδοση" loading="lazy">
+                <img src="images/deliver.png" alt="Έλεγχος και Παράδοση" loading="lazy">
                 <h6>Ελέγχουμε τη λειτουργικότητα, σας παρουσιάζουμε την ιστοσελίδα και την ανεβάζουμε online.
 
                 </h6>
@@ -154,7 +265,7 @@
     </div>
 
     <footer class="footer">
-        <img src="images/logo3.webp" alt="AC logo" loading="lazy">
+        <img src="images/logo4.png" alt="AC logo" loading="lazy">
         <p><i class="fas fa-envelope"></i> info@site-mou.gr</p>
         <p><i class="fas fa-phone"></i> +30 699 20 44 914</p>
         <div class="social-icons">
