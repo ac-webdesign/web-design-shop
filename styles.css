@@ -51,8 +51,10 @@ body{
     justify-content: space-around;
     position: absolute;
     top: 0;
-    background-color: #1817172a;
     padding: 1rem 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 .logo{
@@ -60,7 +62,6 @@ body{
     top: 1rem;
     left: 1rem;
     background-color: #ffffff00;
-    backdrop-filter: blur(1rem);
     z-index: 9999;
 }
 a{
@@ -86,7 +87,7 @@ nav a{
     transition: color 0.3s ease;
 }
 nav a:hover{
-    color: rgb(197, 24, 24);
+    color: #474710;
 }
 
 .burger-menu{
@@ -124,6 +125,7 @@ hr{
     nav ul{
         display: none;
         flex-direction: column;
+        align-items: start;
         position: absolute;
         top: -30px;
         right: 0;
@@ -131,22 +133,30 @@ hr{
         width: 100%;
         height: 100vh;
         padding: 10px;
+        padding-left: 3rem;
     }
     nav ul.active{
         display: flex;
         justify-content: start;
-        padding-top: 5rem;
+        padding-top: 8rem;
         gap: 1.6rem;
     }
-
+    .nav-item{
+        border-left: 2px solid white;
+        padding-left: 2rem;
+    }
     .nav-footer.active{
         display: block;
     }
-    .nav-footer i, .social-icons i {
+    .nav-footer i {
+        color: white;
+    }
+    .social-icon i{
         color: white;
     }
     .nav-footer img{
-        width: 12rem;
+        width: 15rem;
+        height: 4rem;
         margin-bottom: 1rem;
     }
     .header{
@@ -1373,8 +1383,8 @@ form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    padding: 0 5rem;
-    margin-bottom: 5rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
 }
 
 .service199 {
@@ -1388,7 +1398,6 @@ form{
     border: 1px solid #ddd;
     text-align: center;
     aspect-ratio: 1; 
-    font-family: 'Arial', sans-serif;
 }
 .button-199{
     width: 300px;
@@ -1404,8 +1413,12 @@ form{
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+    
     .services-199 {
         grid-template-columns: 1fr;
+    }
+    .service199{
+        max-width: 330px;
     }
 }
 article{
