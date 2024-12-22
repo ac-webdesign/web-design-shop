@@ -93,7 +93,7 @@ document.addEventListener('click', (e) => {
                   about.classList.add('show');
               }, index * 200); 
           }
-          if (tabTop < windowHeight - 900) {
+          if (tabTop < windowHeight - 1100) {
             setTimeout(() => {
                 about.classList.remove('show');
             }, index * 200); 

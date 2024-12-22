@@ -444,7 +444,7 @@ button:hover{
         align-items: center;
     }
     .hero h3{ 
-        font-size: 12px;
+        font-size: 16px;
     }
     .hero h1{
         font-size: 30px;
@@ -455,6 +455,9 @@ button:hover{
         width: 10rem;
         font-size: 0.7rem;
         padding: 0.6rem;
+    }
+    .hero-tabs-container h4{
+        display: none;
     }
 }
 /* SERVICES */
@@ -559,7 +562,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     gap: 2rem;
     /* background-color: #b8b880; */
     background-color: #ffffff;
@@ -570,7 +573,8 @@ button:hover{
     height: 100px;
     position: absolute;
     top: 20rem;
-    background-color: #7a7a102f;
+    background-image: linear-gradient(to bottom, #E6E6D3,white,#E6E6D3);
+    /* background-color: #7a7a102f; */
     z-index: 1;
 }
 #services img{
@@ -684,7 +688,8 @@ button:hover{
     align-items: center;
     justify-content: center;
     padding: 5rem 1rem;
-    background: linear-gradient(-45deg,  #E6E6D3,#b8b883,#E6E6D3,#b8b883);
+    background-color: #f8f8f6;
+    /* background: linear-gradient(-45deg,  #E6E6D3,#b8b883,#E6E6D3,#b8b883); */
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     width: 100%;
@@ -1225,7 +1230,7 @@ form{
     font-size: 1.5rem;
     margin-bottom: 3rem;
     padding: 1rem 0;
-    background-color: #E6E6D3;
+    background-image: linear-gradient(to bottom, #E6E6D3,white,#E6E6D3);
 }
 .service-description h6{
     font-size: 0.8rem;
@@ -1495,7 +1500,8 @@ article{
 
 
 #blog{
-    padding-top: 10rem;
+    padding-top: 3rem;
+    background-color: white;
 }
 
 .blog-container{
@@ -1519,5 +1525,63 @@ article{
 @media (width< 1200px) {
     .blog-container{
         flex-direction: column;
+    }
+    .bio-right button{
+        text-align: center;
+    }
+    
+}
+
+/* SUPPORT SECTION */
+
+.support{
+    display: flex;
+    width: 100%;
+}
+.left-support, .right-support{
+    width: 50%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-support{
+    background-color:#666642;
+    color: rgb(255, 255, 255);
+}
+.right-support{
+    background-color:#ebebe1;
+    color: #666642;
+}
+.number{
+    border: 3px solid white;
+    padding: 0.6rem 4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.support h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.support h5{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.support i{
+    font-size: 2rem;
+    color: #666642;
+}
+.support .social{
+    display: flex;
+    gap: 2rem;
+}
+
+@media (width < 900px) {
+    .support{
+        flex-direction: column;
+    }
+    .right-support, .left-support{
+        width: 100%;
     }
 }
