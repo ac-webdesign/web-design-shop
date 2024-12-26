@@ -52,11 +52,31 @@ document.addEventListener('click', (e) => {
     const projectTab = document.querySelectorAll('.project-container')
     const action = document.querySelectorAll('.action-container')
     const h3 = document.querySelectorAll('.h3')
-    // const revealHero = () => {
-    //     const hero = document.querySelector('.hero-left-container')
-        
-    //     hero.classList.add('show');
-    // 
+    const animeteRight = document.querySelectorAll('.animate-right')
+    const animeteLeft = document.querySelectorAll('.animate-left')
+    const revealAnimate = () => {
+
+      animeteRight.forEach((animate, index) => {
+        const tabTop = animate.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+            if (tabTop < windowHeight - 50) {
+                setTimeout(() => {
+                  animate.classList.add('show')
+                }, index * 200); 
+            }
+      })   
+      animeteLeft.forEach((animate, index) => {
+        const tabTop = animate.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+            if (tabTop < windowHeight - 50) {
+                setTimeout(() => {
+                  animate.classList.add('show')
+                }, index * 200); 
+            }
+      })    
+  };
     const revealH3 = () => {
 
       h3.forEach((h, index) => {
@@ -129,7 +149,7 @@ document.addEventListener('click', (e) => {
   };
     // Run on scroll
     window.addEventListener('scroll', revealH3);
-
+    window.addEventListener('scroll', revealAnimate);
     window.addEventListener('scroll', revealTabs);
     window.addEventListener('scroll', revealProjects);
     window.addEventListener('scroll', revealAction);
@@ -139,5 +159,6 @@ document.addEventListener('click', (e) => {
     revealTabs();
     revealProjects();
     revealAction();
+    revealAnimate();
 });
   

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <title>Η Σημασία μιας Ιστοσελίδας για την Επιχείρησή σας | site-mou.gr</title> -->
-    <title>Άρθρα | site-mou.gr</title>
+    <title>Κατασκευές επαγγελματικών ιστοσελίδων | Άρθρα</title>
 
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
@@ -39,14 +39,34 @@
         gtag('config', 'G-EK417XHKDR');
     </script>
     <style>
-        .header{
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+         .header{
+            background-image: url(images/herobg.jpg);
             background-size: 400% 400%;
-	        animation: gradient 15s ease infinite;
         }
         #blog{
             padding-top: 10rem;
+            flex-direction: column;
         }
+
+        .bio-right button{
+            text-align: start;
+        }
+        #blog .hero-button:hover{
+            color: white;
+        }
+        .services-content{
+            padding: 2rem;
+        }
+
+        @media (width < 900px) {
+            .bio-right button{
+                text-align: center;
+            }
+            .bio-container:nth-child(2){
+                flex-direction: column-reverse;
+            }
+        }
+        
     </style>
 </head>
 
@@ -68,7 +88,7 @@
                         <p><i class="fas fa-envelope"></i> <a href="mailto:info@site-mou.gr">info@site-mou.gr</a></p>
                         <p><i class="fas fa-phone"></i> <a href="tel:+306992044914">+30 699 20 44 914</a></p>
                         <div class="social-icons">
-                            <!-- <a href="https://www.facebook.com/delavengas/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f" style="color: white;"></i></a> -->
+                            <a href="https://www.facebook.com/profile.php?id=61570264058690" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f" style="color: white;"></i></a>
                             <a href="https://www.instagram.com/sitemou.gr/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram" style="color: white;"></i></a>
                         </div>
                     </div>
@@ -81,20 +101,35 @@
     </section> -->
     
     <section class="projects-page" id="blog">
-        <div class="services-content">
-            <h2>Τα τελευταία μας άρθρα</h2>
+        <h2>Τα τελευταία μας άρθρα</h2>
 
-            <div class="bio-container" >
+        <div class="services-content">
+
+            <div class="bio-container animate-right" >
                 <div class="bio-left">
-                    <img src="images/landingpage.png" alt="Κατασκευή Ιστοσελίδας για Διαδικτυακά Μαθήματα Αγγλικών" style="border: 1px solid rgba(0, 0, 0, 0.192);" loading="lazy">
+                    <img src="images/landingpage.png" alt="Η σημασία μιας ιστοσελίδας για την επιχειρησή σας" loading="lazy">
                 </div>
                 <div class="bio-right">
-                    <h4>Η σημασία μιας ιστοσελίδας για την επιχειρησή σας</h4>
+                    <a href="blogs/website-importance.html">
+                        <h4>Η σημασία μιας ιστοσελίδας για την επιχειρησή σας</h4>
+                    </a>
                     <p>Στη σημερινή ψηφιακή εποχή, η παρουσία μιας επιχείρησης στο διαδίκτυο δεν είναι απλώς προαιρετική, αλλά αποτελεί αναγκαιότητα. Ανεξαρτήτως μεγέθους ή κλάδου, μια ιστοσελίδα μπορεί να αποτελέσει τον ακρογωνιαίο λίθο για την επιτυχία και την ανάπτυξη μιας επιχείρησης. Παρακάτω εξετάζουμε γιατί είναι τόσο σημαντικό να διαθέτει μια επιχείρηση τη δική της ιστοσελίδα.</p>
                     <a href="blogs/website-importance.html"><button>Διαβάστε περισσότερα</button></a>
                 </div>
             </div> 
-
+            <div class="bio-container animate-left" >
+                
+                <div class="bio-right">
+                    <a href="blogs/speed-importance.html">
+                        <h4>Πώς να Βελτιώσετε την Ταχύτητα της Ιστοσελίδας σας</h4>
+                    </a>
+                    <p>Η ταχύτητα φόρτωσης μιας ιστοσελίδας αποτελεί καθοριστικό παράγοντα για την επιτυχία της. Επηρεάζει άμεσα την εμπειρία χρήστη, την κατάταξη στις μηχανές αναζήτησης και, κατ’ επέκταση, την απόδοση της επιχείρησής σας στο διαδίκτυο. Αν η ιστοσελίδα σας καθυστερεί να φορτώσει, οι επισκέπτες μπορεί να απογοητευτούν και να φύγουν, οδηγώντας σε χαμηλότερα conversion rates. Παρακάτω, θα βρείτε αναλυτικές συμβουλές για να επιταχύνετε την ιστοσελίδα σας.</p>
+                    <a href="blogs/speed-importance.html"><button>Διαβάστε περισσότερα</button></a>
+                </div>
+                <div class="bio-left">
+                    <img src="images/speedtest.png" alt="Πώς να Βελτιώσετε την Ταχύτητα της Ιστοσελίδας σας" loading="lazy">
+                </div>
+            </div> 
             <a href="index.html"><button class="hero-button">Πίσω στην Αρχική</button></a>
 
         </div>
@@ -111,10 +146,10 @@
     <footer class="footer">
         <img src="images/logo4.png" alt="AC logo" loading="lazy">
         <p><i class="fas fa-envelope"></i> info@site-mou.gr</p>
-        <p><i class="fas fa-phone"></i> +30 699 20 44 914</p>
+        <p><i class="fas fa-phone"></i> 6992044914</p>
         <div class="social-icons">
-            <!-- <a href="https://www.facebook.com/delavengas/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> -->
-            <a href="https://www.instagram.com/sitemou.gr/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61570264058690" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+            <a href="https://www.instagram.com/sitemou.gr/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram" style="color: white;"></i></a>
         </div>
     </footer>
     
