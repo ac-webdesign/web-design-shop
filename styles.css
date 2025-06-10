@@ -1128,32 +1128,53 @@ form{
 .footer{
     width: 100%;
     color: white;
+    background: linear-gradient(45deg, #000000, #181810, #000000);
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background-image: url(images/herobg.jpg);
+    /* background-image: url(images/herobg.jpg); */
     background-size: 400% 400%;
 	/* animation: gradient 15s ease infinite;     */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem;
+    /* padding: 2rem; */
     gap: 1rem;
 }
 .footer img{
-    width: 12rem;
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 .footer i {
     color: rgb(214, 214, 214);
+    transition: color 0.3s ease;
+}
+.footer i:hover {
+    color: #B3AA8D;
 }
 .footer p{
-    color: #ffffffbe;
-    font-size: 0.7rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    transition: color 0.3s ease;
+
 }
 .footer a{
     text-decoration: none;
     color: white;
 }
+.footer a:hover{
+    color: #B3AA8D;
+}
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+    padding: 1rem;
+}
 @media (width < 440px) {
     .footer{
         padding-bottom: 5rem;
