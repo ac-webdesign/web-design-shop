@@ -212,7 +212,7 @@ hr{
         top: 1.4rem;
     }
 }
-    @media (width< 440px) {
+    @media (width< 540px) {
     nav li a{
         font-size: 1.6rem;
     }
@@ -228,15 +228,15 @@ hr{
         padding-top: 0.7rem;
     }
     .header{
-        height: 65px;
         /* position: fixed; */
         top: 0;
         z-index: 99999;
         background-color: transparent;
+        height: 80px;
     }
     .burger-menu{
         right: 2rem;
-        top: 0.7rem;
+        top: 0.8rem;
     }
     .burger-menu.open {
         right: 2.3rem;
@@ -1221,7 +1221,10 @@ form{
     justify-content: center;
     gap: 2rem;
 }
-
+.services-content a{
+    text-decoration: none;
+    color: #000000;
+}
 .services-page h4{
     margin-bottom: 0.8rem;
     font-weight: 600;
@@ -1331,11 +1334,13 @@ form{
     .phases img{
         width: 240px;
     }
+    
 }
 @media (width < 440px) {
     .phases{
         gap: 0;
     }
+
 }
 
 /* PROJECTS PAGE */
@@ -1525,7 +1530,7 @@ article{
     justify-content: space-around;
     position: absolute;
     top: 0;
-    background-color: #c7c7a285;
+    background: linear-gradient(45deg, #000000, #181810, #000000);
     padding: 1rem 0;
     z-index: 9999;
 }

@@ -38,10 +38,7 @@
         gtag('config', 'G-EK417XHKDR');
     </script>
     <style>
-         .header{
-            background-image: url(images/herobg.jpg);
-            background-size: 400% 400%;
-        }
+
         .projects-page button{
             color:hsl(46, 20%, 43%);
             text-align: start;
@@ -52,12 +49,25 @@
         .projects-page p{
             font-size: 1rem;
         }
+        @media (width < 440px) {
+            .bio-right{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .bio-right button{
+                text-align: center;
+                background-color: black;
+                padding: 16px;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <a href="index.html"><img src="/images/logo4.png" alt="site-mou Λογότυπο" class="logo" loading="lazy"></a>
+        <a href="index.html"><img src="/images/logo-sitemou.png" alt="site-mou Λογότυπο" class="logo" loading="lazy"></a>
         <div class="burger-menu">&#9776;</div>
         <nav>
             <ul>
@@ -69,7 +79,7 @@
                 <hr>
                 <li>
                     <div class="nav-footer">
-                        <img src="images/logo4.png" alt="Λογότυπο site-mou.gr">
+                        <img src="images/logo-sitemou.png" alt="Λογότυπο site-mou.gr">
                         <p><i class="fas fa-envelope"></i> <a href="mailto:info@site-mou.gr">info@site-mou.gr</a></p>
                         <p><i class="fas fa-phone"></i> <a href="tel:+306992044914">+30 699 20 44 914</a></p>
                         <div class="social-icons">
@@ -87,54 +97,53 @@
         <div class="services-content">
             <h2>Τα έργα μας</h2>
 
-            <div class="bio-container" >
-                <div class="bio-left">
-                    <img src="images/english-teacher.webp" alt="Κατασκευή Ιστοσελίδας για Διαδικτυακά Μαθήματα Αγγλικών" style="border: 1px solid rgba(0, 0, 0, 0.192);" loading="lazy">
+                <div class="bio-container">
+                    <div class="bio-left">
+                        <img src="images/jktrans.png" alt="Μεταφορική JKtrans7LTD" loading="lazy">
+                    </div>
+                    <div class="bio-right">
+                        <h4>Μεταφορική εταιρία JKtrans7LTD</h4>
+                        <p>Σχεδιασμός και ανάπτυξη της επίσημης ιστοσελίδας της μεταφορικής εταιρείας JK TRANS 7 LTD. Περιλαμβάνει παρουσίαση υπηρεσιών, διαδρομών, στόλου, φόρμα επικοινωνίας και διαδραστικό χάρτη κάλυψης Ευρώπης.</p>
+                        <a href="https://www.JKtrans7LTD.com/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
+                    </div>
                 </div>
-                <div class="bio-right">
-                    <h4>Διαδικτυακά μαθήματα Αγγλικών</h4>
-                    <p>
-                        Μια καλαίσθητη και λειτουργική ιστοσελίδα σχεδιασμένη να προσφέρει άμεση 
-                        πρόσβαση σε πληροφορίες και υπηρεσίες διαικτυακών μαθημάτων Αγγλικών. Με μοντέρνο σχεδιασμό, 
-                        εύκολη πλοήγηση και πλήρη προσαρμογή σε όλες τις συσκευές, 
-                        εξασφαλίζει μια επαγγελματική online παρουσία.</p>
-                    <a href="https://katerinamos.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
-                </div>
-            </div> 
-  
             <div class="bio-container">
                 <div class="bio-left">
-                    <img src="images/portfolio-project.webp" alt="Ιστοσελίδα για Χαρτοφυλάκιο Προγραμματιστή Ιστού" loading="lazy">
+                    <img src="images/noodlehouse.png" alt="Ασιατικό εστιατόριο Noodle House" loading="lazy">
                 </div>
                 <div class="bio-right">
-                    <h4>Χαρτοφυλάκιο Προγραμματιστή Ιστού</h4>
-                    <p>Ένα δυναμικό και καλαίσθητο χαρτοφυλάκιο για προγραμματιστή Ιστού, σχεδιασμένο να αναδεικνύει τις δεξιότητες και τα έργα του. Με μοντέρνο layout, προσαρμοστικότητα σε όλες τις συσκευές και έμφαση στη λεπτομέρεια, προσφέρει μια επαγγελματική εικόνα που εντυπωσιάζει και εμπνέει εμπιστοσύνη.</p>
-                    <a href="https://ac-webdev.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
-                </div>
-            </div>  
-
-            <div class="bio-container">
-                <div class="bio-left">
-                    <img src="images/dentist.webp" alt="Δημιουργούμε ιστοσελίδες για Οδοντιατρείο" loading="lazy">
-                </div>
-                <div class="bio-right">
-                    <h4>Οδοντιατρείο Ανδριάννα Φιλίππου</h4>
-                    <p>Μια σύγχρονη ιστοσελίδα για Οδοντιατρείο, που προσφέρει εύκολη πλοήγηση και τη δυνατότητα να κλείσετε το ραντεβού σας online. Με μοντέρνο σχεδιασμό και λειτουργικότητα σε όλες τις συσκευές, αναδεικνύει την επαγγελματική εξειδίκευση και τις παρεχόμενες υπηρεσίες.</p>
-                    <a href="https://afilippou.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
+                    <h4>Ασιατικό εστιατόριο Noodle House</h4>
+                    <p>Σχεδιασμός και ανάπτυξη μοντέρνας ιστοσελίδας για εστιατόριο ασιατικής κουζίνας. Δυναμική προβολή μενού, φωτογραφίες πιάτων και ποτών, πληροφορίες για παραγγελίες και take away. Responsive design με έμφαση στην αισθητική, την ταχύτητα και την εύκολη πλοήγηση για κινητά και desktop.</p>
+                    <a href="https://www.noodlehouse.gr/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
 
                 </div>
             </div>
-            <div class="bio-container">
-                <div class="bio-left">
-                    <img src="images/papariga_homeopathy.png" alt="Ομοιοπαθητική Αφροδίτη Παπαρήγα" loading="lazy">
+            
+                <div class="bio-container" >
+                    <div class="bio-left">
+                        <img src="images/english-teacher.webp" alt="Κατασκευή Ιστοσελίδας για Διαδικτυακά Μαθήματα Αγγλικών" style="border: 1px solid rgba(0, 0, 0, 0.192);" loading="lazy">
+                    </div>
+                    <div class="bio-right">
+                        <h4>Διαδικτυακά μαθήματα Αγγλικών</h4>
+                        <p>
+                            Μια καλαίσθητη και λειτουργική ιστοσελίδα σχεδιασμένη να προσφέρει άμεση
+                            πρόσβαση σε πληροφορίες και υπηρεσίες διαικτυακών μαθημάτων Αγγλικών. Με μοντέρνο σχεδιασμό,
+                            εύκολη πλοήγηση και πλήρη προσαρμογή σε όλες τις συσκευές,
+                            εξασφαλίζει μια επαγγελματική online παρουσία.
+                        </p>
+                        <a href="https://katerinamos.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
+                    </div>
                 </div>
-                <div class="bio-right">
-                    <h4>Ομοιοπαθητικός Αφροδίτη Παπαρίγα</h4>
-                    <p>Η ιστοσελίδα για την Ομοιοπαθητικό Αφροδίτη Παπαρήγα, δημιουργεί έναν φιλικό και λειτουργικό χώρο ενημέρωσης για τις ολιστικές θεραπείες και για την Ομοιοπαθητική. Η σελίδα προσφέρει καθαρό σχεδιασμό, εύκολη πλοήγηση και βελτιστοποιημένη εμπειρία χρήστη, επιτρέποντας στους επισκέπτες να ανακαλύψουν τις υπηρεσίες και τη φιλοσοφία της θεραπεύτριας.</p>
-                    <a href="https://homeopath-afroditi.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
-
+                <div class="bio-container">
+                    <div class="bio-left">
+                        <img src="images/papariga_homeopathy.png" alt="Ομοιοπαθητική Αφροδίτη Παπαρήγα" loading="lazy">
+                    </div>
+                    <div class="bio-right">
+                        <h4>Ομοιοπαθητικός Αφροδίτη Παπαρίγα</h4>
+                        <p>Η ιστοσελίδα για την Ομοιοπαθητικό Αφροδίτη Παπαρήγα, δημιουργεί έναν φιλικό και λειτουργικό χώρο ενημέρωσης για τις ολιστικές θεραπείες και για την Ομοιοπαθητική. Η σελίδα προσφέρει καθαρό σχεδιασμό, εύκολη πλοήγηση και βελτιστοποιημένη εμπειρία χρήστη, επιτρέποντας στους επισκέπτες να ανακαλύψουν τις υπηρεσίες και τη φιλοσοφία της θεραπεύτριας.</p>
+                        <a href="https://homeopath-afroditi.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
+                    </div>
                 </div>
-            </div>
 
             <div class="bio-container">
                 <div class="bio-left">
@@ -147,30 +156,31 @@
 
                 </div>
             </div>
+  
+                <div class="bio-container">
+                    <div class="bio-left">
+                        <img src="images/portfolio-project.webp" alt="Ιστοσελίδα για Χαρτοφυλάκιο Προγραμματιστή Ιστού" loading="lazy">
+                    </div>
+                    <div class="bio-right">
+                        <h4>Χαρτοφυλάκιο Προγραμματιστή Ιστού</h4>
+                        <p>Ένα δυναμικό και καλαίσθητο χαρτοφυλάκιο για προγραμματιστή Ιστού, σχεδιασμένο να αναδεικνύει τις δεξιότητες και τα έργα του. Με μοντέρνο layout, προσαρμοστικότητα σε όλες τις συσκευές και έμφαση στη λεπτομέρεια, προσφέρει μια επαγγελματική εικόνα που εντυπωσιάζει και εμπνέει εμπιστοσύνη.</p>
+                        <a href="https://ac-webdev.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
+                    </div>
+                </div>  
+
             <div class="bio-container">
                 <div class="bio-left">
-                    <img src="images/jktrans.png" alt="Μεταφορική JKtrans7LTD" loading="lazy">
+                    <img src="images/dentist.webp" alt="Δημιουργούμε ιστοσελίδες για Οδοντιατρείο" loading="lazy">
                 </div>
                 <div class="bio-right">
-                    <h4>Μεταφορική εταιρία JKtrans7LTD</h4>
-                    <p>Σχεδιασμός και ανάπτυξη της επίσημης ιστοσελίδας της μεταφορικής εταιρείας JK TRANS 7 LTD. Περιλαμβάνει παρουσίαση υπηρεσιών, διαδρομών, στόλου, φόρμα επικοινωνίας και διαδραστικό χάρτη κάλυψης Ευρώπης.</p>
-                    <a href="https://www.JKtrans7LTD.com/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
+                    <h4>Οδοντιατρείο Ανδριάννα Φιλίππου</h4>
+                    <p>Μια σύγχρονη ιστοσελίδα για Οδοντιατρείο, που προσφέρει εύκολη πλοήγηση και τη δυνατότητα να κλείσετε το ραντεβού σας online. Με μοντέρνο σχεδιασμό και λειτουργικότητα σε όλες τις συσκευές, αναδεικνύει την επαγγελματική εξειδίκευση και τις παρεχόμενες υπηρεσίες.</p>
+                    <a href="https://afilippou.netlify.app/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
 
                 </div>
             </div>
-            <div class="bio-container">
-                <div class="bio-left">
-                    <img src="images/noodlehouse.png" alt="Ασιατικό εστιατόριο Noodle House" loading="lazy">
-                </div>
-                <div class="bio-right">
-                    <h4>Ασιατικό εστιατόριο Noodle House</h4>
-                    <p>Σχεδιασμός και ανάπτυξη μοντέρνας ιστοσελίδας για εστιατόριο ασιατικής κουζίνας. Δυναμική προβολή μενού, φωτογραφίες πιάτων και ποτών, πληροφορίες για παραγγελίες και take away. Responsive design με έμφαση στην αισθητική, την ταχύτητα και την εύκολη πλοήγηση για κινητά και desktop.</p>
-                    <a href="https://www.noodlehouse.gr/" target="_blank"><button>Δείτε την Ιστοσελίδα</button></a>
-
-                </div>
-            </div>
+            
             <a href="contact.html"><button class="hero-button">Επικοινωνήστε μαζί μας</button></a>
-
         </div>
 
     </section>
@@ -183,8 +193,7 @@
         </div>
     </div>
     <footer class="footer">
-        <img src="images/logo4.png" alt="Λογότυπο site-mou.gr" loading="lazy">
-        <p><i class="fas fa-envelope"></i> info@site-mou.gr</p>
+        <img src="images/logo-sitemou.png" alt="Λογότυπο site-mou.gr" loading="lazy">
         <p><i class="fas fa-phone"></i> 6992044914</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=61570264058690" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
