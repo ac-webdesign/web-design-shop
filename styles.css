@@ -473,6 +473,7 @@ button:hover{
     .hero-tabs-container h4{
         display: none;
     }
+    
 }
 /* SERVICES */
 
@@ -566,7 +567,12 @@ button:hover{
     .service-tab{
         max-width: 300px;
     }
-
+    .mainbuttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
 }
 
 /* SERVICES SECTION */
@@ -682,6 +688,7 @@ button:hover{
     }
     .service1{
         gap: 1rem;
+        padding-bottom: 2rem;
     }
     #services {
         height: 900px;
@@ -1444,6 +1451,7 @@ form{
     gap: 1rem;
     padding: 0 2rem;
     margin-bottom: 3rem;
+    max-width: 1140px;
 }
 
 .service199 {
